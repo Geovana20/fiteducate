@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/animate.min.css" />
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/font-awesome.css" />
+  <link rel="stylesheet" href="../css/owl.carousel.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="../css/player/YTPlayer.css" />
+  <link href="../css/pro-bars.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="../images/favicon.jpg" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript">
+    function calcResul(){
+      var pesoan = document.getElementById('pesoan').value;
+      var peso = document.getElementById('peso').value;
+
+      var result = document.getElementById('result');
+      result.innerHTML = pesoan - peso;
+      var result2 = pesoan - peso;
+      
+      if (result2 >= 1){
+        alert("Parabéns, você perdeu: "+result2+ "KG, agora calcule seu IMC");
+}
+}
+function calcIMC(){
+      var altura = document.getElementById('altura').value;
+      var peso = document.getElementById('peso').value;
+      var imc = document.getElementById('imc');
+      imc.innerHTML = peso / (altura * altura);
+      var imc2 = peso / (altura * altura);
+      if(document.getElementById('avancar').disable==true);
+      
+      if (imc2 >= 25){
+        alert("Você ainda está acima do peso: "+imc2+"Por favor, repita o aplicativo");
+        window.location = "dietas.html";
+      }
+      if(imc2 <= 18.4){
+        alert("Você está abaixo do peso: "+imc2+ " Obrigada por participar e coma mais um pouco para chegar no ideal");
+        window.location = "../index.html";
+
+      }
+      if(imc2 >18.5 && imc2 <= 24.9){
+        alert("Você está no peso ideal, parabéns, obrigada por fazer parte dessa família!");
+        window.location = "../index.html";
+      }
+    }
+
+
+  </script>
+  
+</head>
+<body>
+<section class="pb_section bg-light bg-image with-overlay" data-section="attorneys" id="section-attorneys" style="background-image: url(../images/parallax/31.jpg)">
+  <div class="container">
+    
+
+      <div> <b><center><h1 class=" condensed uppercase no-padding no-margin bold black">Resultado</h1></center></b>
+        <br><center>Peso anterior:
+          <input type="text" required="required" id="pesoan" size="4" name="pesoan" color="white"/><br></br></center></br>
+          <div class="col-sm-6">
+            <center>Peso:
+              <input type="text" required="required" id="peso" size="4" name="peso" class="text-black" />
+            </center> </br>
+            <center>Altura:
+              <input type="text" required="required" id="altura" size="4" name="altura" class="text-black" />
+            </center>
+            <div class="row">
+            <div class="col-sm-6">
+            <center>Resultado:
+            <p id="result"></p></center> 
+          </div>
+          <div class="col-sm-6">
+           <center> IMC:
+            <p id="imc"></p> </center>
+          </div>
+        </div>
+          </div>
+        </br>
+          <button type="button" onclick="calcResul();" name="calcResul" class="form-btn semibold">Resultado</button></br>
+          <button type="button" onclick="calcIMC();" name="calcResul" class="form-btn semibold">Calcular IMC</button></br>
+          
+            <center><h2 class="heading mb-3">Obrigada por fazer parte dessa família!</h2></center>
+          </div>
+        </div>
+        </section>
+      </div>
+      <p><center><img src="../images/i.jpeg" width="300" height="300"/></p></center>
+      <br><div id="avancar"></div>
+      </body>
+
+      </html>

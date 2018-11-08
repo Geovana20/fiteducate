@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="../css/animate.min.css" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../css/font-awesome.css" />
+	<link rel="stylesheet" href="../css/owl.carousel.css" />
+	<link rel="stylesheet" href="../css/responsive.css" />
+	<link rel="stylesheet" href="../css/player/YTPlayer.css" />
+	<link href="../css/pro-bars.css" rel="stylesheet" />
+	<link rel="icon" type="image/png" href="../images/favicon.jpg" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Cadastro Usuário</title>
+</head>
+<body>
+	<section id="fun-acts" >
+		<div class="inner fun-acts">
+			<div class="about-margin"></div>
+
+			<br />        
+
+			<!-- Header -->
+			<h1 class="header light gray1 animated" data-animation="fadeInLeft" data-animation-delay="400">
+
+			</div><!-- End Fun Acts Inner -->
+
+		</section><!-- End Fun Acts Section -->
+		<center><h1 class=" condensed uppercase no-padding no-margin bold gray1">Cadastro Usuário</h1></center>
+		<br></br>
+		<fieldset><center>
+			<div>
+				<form method="post" action="../dao/cadastrarUsuario.php">
+					<div class="form-group row">
+					</div>
+					Nome:<input  type="text" required="required" size="50" name="nome"/>
+					<div class="row">
+						<div class="col-sm-6">
+							Idade:
+							<input type="text" required="required" size="4" name="idade"/><br></br>
+
+							Altura:
+							<input type="text" required="required" size="4" name="altura" /><br></br>
+						</div>
+
+						<div class="col-sm-6">
+							Peso:
+							<input type="text" required="required" size="4" name="peso"/> <br></br>
+							
+							Sexo:
+
+							<INPUT TYPE="RADIO" VALUE="F" name="sexo"/> Feminino
+							<INPUT TYPE="RADIO"  VALUE="M" name="sexo"/> Masculino 
+							<br></br></div>
+							</div>
+							<div class="row">
+						<div class="col-sm-6">
+							 Há alguma lesão:</br>
+							<INPUT TYPE="RADIO" VALUE="sim" name="lesao" class="form-check-input" required/> Sim
+							</br><INPUT TYPE="RADIO" VALUE="não" name="lesao" class="form-check-input" required/> Não 
+							</div>
+							<div class="col-sm-6">
+							</br><center>Hábitos Alimentares:<input type="text" required="required" size="60" name="habali"/><center></center>
+						</center></div>
+								<br></br>
+								</div>
+								<div>
+								</br><center>Exercícios Frequentes:
+								<input type="text" required="required" size="60" name="exerfreq"/></center>
+								<br></br>
+								</div>
+								</br>
+								<div class="row">
+									<div class="col-sm-6">
+										<center>Email:
+											<input type="email" required="required" size="60" name="email"/>
+											<br></br></center>
+										</div>
+										<div class="col-sm-6">
+											Senha:
+											<input type="password" required="required" size="20" name="senha" />
+											<br></br>
+										</div>
+										<br></br>
+									</div>
+							</div>
+
+							<center><input type="submit" Value="Cadastrar" class="btn btn-primary"/></center> <br>
+						</form>
+						</body>
+						</html>
